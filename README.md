@@ -1,6 +1,6 @@
 #H5-APP
 
-一个标准的移动端单页应用样例。
+一个标准的移动端单页应用样例。线上地址：[https://mrent.iwjw.com/](https://mrent.iwjw.com/)。
 
 ## 实现
 + vue2 + vuex + vue-router + vue-resource + mint-ui SPA
@@ -49,6 +49,8 @@ h5-app 项目根目录
 |　　|　　|---utils 工具方法   
 |　　|　　|---wechat 微信相关   
 |---bkd 模拟后端API  
+|　　|---api 模拟接口目录  
+|　　|---img 模拟图片目录     
 |---build 项目构建代码  
 |　　|---config 构建项目用到的配置  
 |　　|---task 构建任务入口  
