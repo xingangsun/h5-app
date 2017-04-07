@@ -17,27 +17,27 @@ var get = lodash.get;
  * @constructor
  */
 function WebpackAssetsManifest(options) {
-    var defaults = {
-        output: 'manifest.json',
-        replacer: null,
-        space: 2,
-        emit: true,
-        fileExtRegex: /\.\w{2,4}\.(?:map|gz)$|\.\w+$/i,
-        sortManifest: true,
+  var defaults = {
+    output: 'manifest.json',
+    replacer: null,
+    space: 2,
+    emit: true,
+    fileExtRegex: /\.\w{2,4}\.(?:map|gz)$|\.\w+$/i,
+    sortManifest: true,
 
-        versionFiles: [], //需要后端加上版本号的文件
-        hashNum: 7 //异步加载的其他文件的hash位数，用来清除服务器缓存
-    };
+    versionFiles: [], //需要后端加上版本号的文件
+    hashNum: 7 //异步加载的其他文件的hash位数，用来清除服务器缓存
+  };
 
-    options = pick(
-        merge({}, defaults, options || {}),
-        keys(defaults)
-    );
+  options = pick(
+    merge({}, defaults, options || {}),
+    keys(defaults)
+  );
 
-    merge(this, options);
+  merge(this, options);
 
-    this.compiler = null;
-    this.moduleAssets = Object.create(null);
+  this.compiler = null;
+  this.moduleAssets = Object.create(null);
 }
 
 /**
@@ -47,19 +47,19 @@ function WebpackAssetsManifest(options) {
  * @return {string}
  */
 WebpackAssetsManifest.prototype.getExtension = function(filename) {
-    if (!filename) {
-        return '';
-    }
+  if (!filename) {
+    return '';
+  }
 
-    filename = filename.split(/[?#]/)[0];
+  filename = filename.split(/[?#]/)[0];
 
-    if (this.fileExtRegex) {
-        var ext = filename.match(this.fileExtRegex);
+  if (this.fileExtRegex) {
+    var ext = filename.match(this.fileExtRegex);
 
-        return ext && ext.length ? ext[0] : '';
-    }
+    return ext && ext.length ? ext[0] : '';
+  }
 
-    return path.extname(filename);
+  return path.extname(filename);
 };
 
 /**
@@ -69,25 +69,25 @@ WebpackAssetsManifest.prototype.getExtension = function(filename) {
  * @return {object}
  */
 WebpackAssetsManifest.prototype.getStatsData = function(stats) {
-    return stats.toJson({
-        assets: true,
-        modulesSort: true,
-        chunksSort: true,
-        assetsSort: true,
+  return stats.toJson({
+    assets: true,
+    modulesSort: true,
+    chunksSort: true,
+    assetsSort: true,
 
-        hash: false,
-        version: false,
-        timings: false,
-        chunks: false,
-        chunkModules: false,
-        modules: false,
-        children: false,
-        cached: false,
-        reasons: false,
-        source: false,
-        errorDetails: false,
-        chunkOrigins: false
-    });
+    hash: false,
+    version: false,
+    timings: false,
+    chunks: false,
+    chunkModules: false,
+    modules: false,
+    children: false,
+    cached: false,
+    reasons: false,
+    source: false,
+    errorDetails: false,
+    chunkOrigins: false
+  });
 };
 
 /**
@@ -97,24 +97,24 @@ WebpackAssetsManifest.prototype.getStatsData = function(stats) {
  * @return {object}
  */
 WebpackAssetsManifest.prototype.processAssets = function(assets) {
-    var keys = Object.keys(assets);
-    var index = keys.length;
+  var keys = Object.keys(assets);
+  var index = keys.length;
 
-    while (index--) {
-        var name = keys[index];
-        var filenames = assets[name];
+  while (index--) {
+    var name = keys[index];
+    var filenames = assets[name];
 
-        if (!Array.isArray(filenames)) {
-            filenames = [filenames];
-        }
-
-        for (var i = 0, l = filenames.length; i < l; ++i) {
-            var filename = name + this.getExtension(filenames[i]);
-            this.moduleAssets[filename] = filenames[i];
-        }
+    if (!Array.isArray(filenames)) {
+      filenames = [filenames];
     }
 
-    return this.moduleAssets;
+    for (var i = 0, l = filenames.length; i < l; ++i) {
+      var filename = name + this.getExtension(filenames[i]);
+      this.moduleAssets[filename] = filenames[i];
+    }
+  }
+
+  return this.moduleAssets;
 };
 
 /**
@@ -123,22 +123,22 @@ WebpackAssetsManifest.prototype.processAssets = function(assets) {
  * @return {object}
  */
 WebpackAssetsManifest.prototype.toJSON = function() {
-    if (this.sortManifest) {
-        var keys = Object.keys(this.moduleAssets);
+  if (this.sortManifest) {
+    var keys = Object.keys(this.moduleAssets);
 
-        if (typeof this.sortManifest === 'function') {
-            keys.sort(this.sortManifest.bind(this));
-        } else {
-            keys.sort();
-        }
-
-        return keys.reduce(function(sorted, key) {
-            sorted[key] = this.moduleAssets[key];
-            return sorted;
-        }.bind(this), Object.create(null));
+    if (typeof this.sortManifest === 'function') {
+      keys.sort(this.sortManifest.bind(this));
+    } else {
+      keys.sort();
     }
 
-    return this.moduleAssets;
+    return keys.reduce(function(sorted, key) {
+      sorted[key] = this.moduleAssets[key];
+      return sorted;
+    }.bind(this), Object.create(null));
+  }
+
+  return this.moduleAssets;
 };
 
 /**
@@ -147,16 +147,16 @@ WebpackAssetsManifest.prototype.toJSON = function() {
  * @return {string}
  */
 WebpackAssetsManifest.prototype.toString = function() {
-    var transArgs = {
-        versionFiles: this.versionFiles,
-        hashNum: this.hashNum
-    };
-    let _manifests = Object.assign({}, this['moduleAssets'])
-    this.versionFiles.forEach(function(item) {
-        delete _manifests[item]
-    });
-    transArgs['assets'] = _manifests;
-    return JSON.stringify(transArgs, this.replacer, this.space);
+  var transArgs = {
+    versionFiles: this.versionFiles,
+    hashNum: this.hashNum
+  };
+  let _manifests = Object.assign({}, this['moduleAssets'])
+  this.versionFiles.forEach(function(item) {
+    delete _manifests[item]
+  });
+  transArgs['assets'] = _manifests;
+  return JSON.stringify(transArgs, this.replacer, this.space);
 };
 
 /**
@@ -166,24 +166,24 @@ WebpackAssetsManifest.prototype.toString = function() {
  * @param  {Function} callback
  */
 WebpackAssetsManifest.prototype.handleEmit = function(compilation, callback) {
-    this.processAssets(this.getStatsData(compilation.getStats()).assetsByChunkName);
-    var json = this.toString();
+  this.processAssets(this.getStatsData(compilation.getStats()).assetsByChunkName);
+  var json = this.toString();
 
-    var output = path.relative(
-        get(this.compiler, 'options.output.path', this.compiler.context),
-        this.getOutputPath()
-    );
+  var output = path.relative(
+    get(this.compiler, 'options.output.path', this.compiler.context),
+    this.getOutputPath()
+  );
 
-    compilation.assets[output] = {
-        source: function() {
-            return json;
-        },
-        size: function() {
-            return json.length;
-        }
-    };
+  compilation.assets[output] = {
+    source: function() {
+      return json;
+    },
+    size: function() {
+      return json.length;
+    }
+  };
 
-    callback();
+  callback();
 };
 
 /**
@@ -192,13 +192,13 @@ WebpackAssetsManifest.prototype.handleEmit = function(compilation, callback) {
  * @param  {object} stats - compilation stats
  */
 WebpackAssetsManifest.prototype.handleDone = function(stats) {
-    this.processAssets(this.getStatsData(stats).assetsByChunkName);
+  this.processAssets(this.getStatsData(stats).assetsByChunkName);
 
-    var json = this.toString();
-    var output = this.getOutputPath();
+  var json = this.toString();
+  var output = this.getOutputPath();
 
-    this.compiler.outputFileSystem.mkdirpSync(path.dirname(output));
-    this.compiler.outputFileSystem.writeFileSync(output, json);
+  this.compiler.outputFileSystem.mkdirpSync(path.dirname(output));
+  this.compiler.outputFileSystem.writeFileSync(output, json);
 };
 
 /**
@@ -207,10 +207,10 @@ WebpackAssetsManifest.prototype.handleDone = function(stats) {
  * @return {string} path to manifest file
  */
 WebpackAssetsManifest.prototype.getOutputPath = function() {
-    return this.compiler ? path.resolve(
-        get(this.compiler, 'options.output.path', this.compiler.context),
-        this.output
-    ) : '';
+  return this.compiler ? path.resolve(
+    get(this.compiler, 'options.output.path', this.compiler.context),
+    this.output
+  ) : '';
 };
 
 /**
@@ -219,26 +219,26 @@ WebpackAssetsManifest.prototype.getOutputPath = function() {
  * @param  {object} compiler - the Webpack compiler object
  */
 WebpackAssetsManifest.prototype.apply = function(compiler) {
-    this.compiler = compiler;
+  this.compiler = compiler;
 
-    var self = this;
+  var self = this;
 
-    compiler.plugin('compilation', function(compilation) {
-        compilation.plugin('module-asset', function(module, hashedFile) {
-            var file = path.join(path.dirname(hashedFile), path.basename(module.userRequest));
-            self.moduleAssets[file] = hashedFile;
-        });
+  compiler.plugin('compilation', function(compilation) {
+    compilation.plugin('module-asset', function(module, hashedFile) {
+      var file = path.join(path.dirname(hashedFile), path.basename(module.userRequest));
+      self.moduleAssets[file] = hashedFile;
     });
+  });
 
-    if (this.emit) {
+  if (this.emit) {
 
-        compiler.plugin('emit', this.handleEmit.bind(this));
+    compiler.plugin('emit', this.handleEmit.bind(this));
 
-    } else {
+  } else {
 
-        compiler.plugin('done', this.handleDone.bind(this));
+    compiler.plugin('done', this.handleDone.bind(this));
 
-    }
+  }
 };
 
 module.exports = WebpackAssetsManifest;

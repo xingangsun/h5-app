@@ -1,20 +1,20 @@
 {
-    "demos": {
-        "data": [
-            {
-                "shareTitle": null,
-                "shareMemo": null,
-                "sequenceNum": "286",
-                "fileUrl": "/directwaterbucket/bannerConfig/2017/2/19/a120ed1ff04d41e7973fa511783154ff",
-                "dispachUrl": "http://m.rent.iwjw.com/static/about-rebate",
-                "urlType": 0,
-                "position": null,
-                "activityName": "租金返利券",
-                "tag": null,
-                "iconUrl": null
-            }
-        ],
-        "status": 200,
-        "msg": "处理成功"
-    }
+  "demos": {
+    "data": [
+      {
+        "shareTitle": null,
+        "shareMemo": null,
+        "sequenceNum": "286",
+        "fileUrl": "/directwaterbucket/bannerConfig/2017/2/19/a120ed1ff04d41e7973fa511783154ff",
+        "dispachUrl": "http://m.rent.iwjw.com/static/about-rebate",
+        "urlType": 0,
+        "position": null,
+        "activityName": "租金返利券",
+        "tag": null,
+        "iconUrl": null
+      }
+    ],
+    "status": 200,
+    "msg": "处理成功"
+  }
 }

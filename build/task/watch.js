@@ -10,26 +10,26 @@ import webpackConfigDev from '../webpack.config.dev'
 
 // add sourceMap
 const webpackConfig = Object.assign(webpackConfigDev, {
-    watch: true,
-    devtool: 'source-map'
+  watch: true,
+  devtool: 'source-map'
 })
 
 // remove dist
 webpackConfig.plugins.push(new CleanWebpackPlugin(['dist'], {
-    root: `${process.cwd()}`,
-    verbose: false
+  root: `${process.cwd()}`,
+  verbose: false
 }))
 
 webpack(webpackConfig, function (err, stats) {
-    if (err) {
-        return console.error(err)
-    }
+  if (err) {
+    return console.error(err)
+  }
 
-    const jsonStats = stats.toJson()
-    if(jsonStats.errors.length > 0) {
-        return console.log(jsonStats.errors.toString())
-    }
-    if(jsonStats.warnings.length > 0) {
-        return console.log(jsonStats.warnings.toString())
-    }
+  const jsonStats = stats.toJson()
+  if(jsonStats.errors.length > 0) {
+    return console.log(jsonStats.errors.toString())
+  }
+  if(jsonStats.warnings.length > 0) {
+    return console.log(jsonStats.warnings.toString())
+  }
 })

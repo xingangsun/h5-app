@@ -1,250 +1,250 @@
 {
-    "cityList": {
-        "data": {
-            "list": [
-                {
-                    "id": 113476,
-                    "code": "8-i7T_tTY58",
-                    "name": "苏州",
-                    "lat": "31.306426",
-                    "lon": "120.597326",
-                    "spell": "suzhou",
-                    "shortSpell": "sz",
-                    "staticFlag": null,
-                    "serialCode": null,
-                    "lineCode": 0,
-                    "pinyinName": null,
-                    "houseNum": 0
-                },
-                {
-                    "id": 2,
-                    "code": "Xix_iupW0hk",
-                    "name": "上海",
-                    "lat": "31.238092",
-                    "lon": "121.479659",
-                    "spell": "shanghai",
-                    "shortSpell": "sh",
-                    "staticFlag": null,
-                    "serialCode": null,
-                    "lineCode": 0,
-                    "pinyinName": null,
-                    "houseNum": 0
-                },
-                {
-                    "id": 12438,
-                    "code": "HAPiS2Oa0kY",
-                    "name": "北京",
-                    "lat": "39.920176",
-                    "lon": "116.407808",
-                    "spell": "beijing",
-                    "shortSpell": "bj",
-                    "staticFlag": null,
-                    "serialCode": null,
-                    "lineCode": 0,
-                    "pinyinName": null,
-                    "houseNum": 0
-                },
-                {
-                    "id": 40000,
-                    "code": "GA3kBEDXxio",
-                    "name": "广州",
-                    "lat": "23.135736",
-                    "lon": "113.271143",
-                    "spell": "guangzhou",
-                    "shortSpell": "gz",
-                    "staticFlag": null,
-                    "serialCode": null,
-                    "lineCode": 0,
-                    "pinyinName": null,
-                    "houseNum": 0
-                },
-                {
-                    "id": 56000,
-                    "code": "0ZcFPm54ze4",
-                    "name": "深圳",
-                    "lat": "22.547923",
-                    "lon": "114.063918",
-                    "spell": "shenzhen",
-                    "shortSpell": "sz",
-                    "staticFlag": null,
-                    "serialCode": null,
-                    "lineCode": 0,
-                    "pinyinName": null,
-                    "houseNum": 0
-                },
-                {
-                    "id": 86725,
-                    "code": "o8WEL3MyzIw",
-                    "name": "武汉",
-                    "lat": "30.595037",
-                    "lon": "114.291675",
-                    "spell": "wuhan",
-                    "shortSpell": "wh",
-                    "staticFlag": null,
-                    "serialCode": null,
-                    "lineCode": 0,
-                    "pinyinName": null,
-                    "houseNum": 0
-                },
-                {
-                    "id": 71049,
-                    "code": "wCm0vXQDm2s",
-                    "name": "杭州",
-                    "lat": "30.281202",
-                    "lon": "120.161596",
-                    "spell": "hangzhou",
-                    "shortSpell": "hz",
-                    "staticFlag": null,
-                    "serialCode": null,
-                    "lineCode": 0,
-                    "pinyinName": null,
-                    "houseNum": 0
-                },
-                {
-                    "id": 71099,
-                    "code": "WXZO7789IVA",
-                    "name": "天津",
-                    "lat": "39.137214",
-                    "lon": "117.186954",
-                    "spell": "tianjin",
-                    "shortSpell": "tj",
-                    "staticFlag": null,
-                    "serialCode": null,
-                    "lineCode": 0,
-                    "pinyinName": null,
-                    "houseNum": 0
-                },
-                {
-                    "id": 86724,
-                    "code": "rXoGBGeJxFw",
-                    "name": "南京",
-                    "lat": "32.058854",
-                    "lon": "118.784457",
-                    "spell": "nanjing",
-                    "shortSpell": "nj",
-                    "staticFlag": null,
-                    "serialCode": null,
-                    "lineCode": 0,
-                    "pinyinName": null,
-                    "houseNum": 0
-                },
-                {
-                    "id": 98289,
-                    "code": "61O1hzLUGN0",
-                    "name": "成都",
-                    "lat": "30.661125",
-                    "lon": "104.071599",
-                    "spell": "chengdu",
-                    "shortSpell": "cd",
-                    "staticFlag": null,
-                    "serialCode": null,
-                    "lineCode": 0,
-                    "pinyinName": null,
-                    "houseNum": 0
-                },
-                {
-                    "id": 98290,
-                    "code": "58z8UxrEnKU",
-                    "name": "重庆",
-                    "lat": "29.561329",
-                    "lon": "106.548784",
-                    "spell": "chongqing",
-                    "shortSpell": "cq",
-                    "staticFlag": null,
-                    "serialCode": null,
-                    "lineCode": 0,
-                    "pinyinName": null,
-                    "houseNum": 0
-                }
-            ],
-            "bussinessType": {
-                "sale": true,
-                "newhouse": true,
-                "chuzu": true,
-                "brandhouse": true
-            }
+  "cityList": {
+    "data": {
+      "list": [
+        {
+          "id": 113476,
+          "code": "8-i7T_tTY58",
+          "name": "苏州",
+          "lat": "31.306426",
+          "lon": "120.597326",
+          "spell": "suzhou",
+          "shortSpell": "sz",
+          "staticFlag": null,
+          "serialCode": null,
+          "lineCode": 0,
+          "pinyinName": null,
+          "houseNum": 0
         },
-        "status": 200,
-        "msg": "处理成功"
+        {
+          "id": 2,
+          "code": "Xix_iupW0hk",
+          "name": "上海",
+          "lat": "31.238092",
+          "lon": "121.479659",
+          "spell": "shanghai",
+          "shortSpell": "sh",
+          "staticFlag": null,
+          "serialCode": null,
+          "lineCode": 0,
+          "pinyinName": null,
+          "houseNum": 0
+        },
+        {
+          "id": 12438,
+          "code": "HAPiS2Oa0kY",
+          "name": "北京",
+          "lat": "39.920176",
+          "lon": "116.407808",
+          "spell": "beijing",
+          "shortSpell": "bj",
+          "staticFlag": null,
+          "serialCode": null,
+          "lineCode": 0,
+          "pinyinName": null,
+          "houseNum": 0
+        },
+        {
+          "id": 40000,
+          "code": "GA3kBEDXxio",
+          "name": "广州",
+          "lat": "23.135736",
+          "lon": "113.271143",
+          "spell": "guangzhou",
+          "shortSpell": "gz",
+          "staticFlag": null,
+          "serialCode": null,
+          "lineCode": 0,
+          "pinyinName": null,
+          "houseNum": 0
+        },
+        {
+          "id": 56000,
+          "code": "0ZcFPm54ze4",
+          "name": "深圳",
+          "lat": "22.547923",
+          "lon": "114.063918",
+          "spell": "shenzhen",
+          "shortSpell": "sz",
+          "staticFlag": null,
+          "serialCode": null,
+          "lineCode": 0,
+          "pinyinName": null,
+          "houseNum": 0
+        },
+        {
+          "id": 86725,
+          "code": "o8WEL3MyzIw",
+          "name": "武汉",
+          "lat": "30.595037",
+          "lon": "114.291675",
+          "spell": "wuhan",
+          "shortSpell": "wh",
+          "staticFlag": null,
+          "serialCode": null,
+          "lineCode": 0,
+          "pinyinName": null,
+          "houseNum": 0
+        },
+        {
+          "id": 71049,
+          "code": "wCm0vXQDm2s",
+          "name": "杭州",
+          "lat": "30.281202",
+          "lon": "120.161596",
+          "spell": "hangzhou",
+          "shortSpell": "hz",
+          "staticFlag": null,
+          "serialCode": null,
+          "lineCode": 0,
+          "pinyinName": null,
+          "houseNum": 0
+        },
+        {
+          "id": 71099,
+          "code": "WXZO7789IVA",
+          "name": "天津",
+          "lat": "39.137214",
+          "lon": "117.186954",
+          "spell": "tianjin",
+          "shortSpell": "tj",
+          "staticFlag": null,
+          "serialCode": null,
+          "lineCode": 0,
+          "pinyinName": null,
+          "houseNum": 0
+        },
+        {
+          "id": 86724,
+          "code": "rXoGBGeJxFw",
+          "name": "南京",
+          "lat": "32.058854",
+          "lon": "118.784457",
+          "spell": "nanjing",
+          "shortSpell": "nj",
+          "staticFlag": null,
+          "serialCode": null,
+          "lineCode": 0,
+          "pinyinName": null,
+          "houseNum": 0
+        },
+        {
+          "id": 98289,
+          "code": "61O1hzLUGN0",
+          "name": "成都",
+          "lat": "30.661125",
+          "lon": "104.071599",
+          "spell": "chengdu",
+          "shortSpell": "cd",
+          "staticFlag": null,
+          "serialCode": null,
+          "lineCode": 0,
+          "pinyinName": null,
+          "houseNum": 0
+        },
+        {
+          "id": 98290,
+          "code": "58z8UxrEnKU",
+          "name": "重庆",
+          "lat": "29.561329",
+          "lon": "106.548784",
+          "spell": "chongqing",
+          "shortSpell": "cq",
+          "staticFlag": null,
+          "serialCode": null,
+          "lineCode": 0,
+          "pinyinName": null,
+          "houseNum": 0
+        }
+      ],
+      "bussinessType": {
+        "sale": true,
+        "newhouse": true,
+        "chuzu": true,
+        "brandhouse": true
+      }
     },
-    "suggestions": {
-        "timestamp": 1488180642737,
-        "status": 1,
-        "msg": "成功",
-        "refer": null,
-        "data": [
-            {
-                "id": 138714,
-                "g": 3,
-                "lon": "114.2788",
-                "houseNum": 4,
-                "name": "",
-                "lat": "22.733022",
-                "key": "大都会"
-            },
-            {
-                "id": 68023,
-                "g": 3,
-                "lon": "114.346605",
-                "houseNum": 13,
-                "name": "",
-                "lat": "22.713094",
-                "key": "大东城"
-            },
-            {
-                "id": 62005,
-                "g": 3,
-                "lon": "114.263183",
-                "houseNum": 0,
-                "name": "",
-                "lat": "22.726409",
-                "key": "骏达大厦"
-            },
-            {
-                "id": 62292,
-                "g": 3,
-                "lon": "114.263449",
-                "houseNum": 0,
-                "name": "",
-                "lat": "22.726623",
-                "key": "万达大厦"
-            },
-            {
-                "id": 69016,
-                "g": 3,
-                "lon": "113.86613",
-                "houseNum": 0,
-                "name": "",
-                "lat": "22.750125",
-                "key": "琦丰达大厦"
-            },
-            {
-                "id": 61508,
-                "g": 3,
-                "lon": "114.21809653457",
-                "houseNum": 0,
-                "name": "体育新城安置小区",
-                "lat": "22.719295012218",
-                "key": "龙飞大道669号"
-            },
-            {
-                "id": 128339,
-                "g": 3,
-                "lon": "114.22009",
-                "houseNum": 0,
-                "name": "深圳信息职业技术学院",
-                "lat": "22.689913",
-                "key": "龙翔大道2188号"
-            },
-            {
-                "id": 62596,
-                "g": 3,
-                "lon": "113.884245",
-                "houseNum": 8,
-                "name": "",
-                "lat": "22.561316",
-                "key": "第5大道高发西岸花园"
-            }
-        ]
-    }
+    "status": 200,
+    "msg": "处理成功"
+  },
+  "suggestions": {
+    "timestamp": 1488180642737,
+    "status": 1,
+    "msg": "成功",
+    "refer": null,
+    "data": [
+      {
+        "id": 138714,
+        "g": 3,
+        "lon": "114.2788",
+        "houseNum": 4,
+        "name": "",
+        "lat": "22.733022",
+        "key": "大都会"
+      },
+      {
+        "id": 68023,
+        "g": 3,
+        "lon": "114.346605",
+        "houseNum": 13,
+        "name": "",
+        "lat": "22.713094",
+        "key": "大东城"
+      },
+      {
+        "id": 62005,
+        "g": 3,
+        "lon": "114.263183",
+        "houseNum": 0,
+        "name": "",
+        "lat": "22.726409",
+        "key": "骏达大厦"
+      },
+      {
+        "id": 62292,
+        "g": 3,
+        "lon": "114.263449",
+        "houseNum": 0,
+        "name": "",
+        "lat": "22.726623",
+        "key": "万达大厦"
+      },
+      {
+        "id": 69016,
+        "g": 3,
+        "lon": "113.86613",
+        "houseNum": 0,
+        "name": "",
+        "lat": "22.750125",
+        "key": "琦丰达大厦"
+      },
+      {
+        "id": 61508,
+        "g": 3,
+        "lon": "114.21809653457",
+        "houseNum": 0,
+        "name": "体育新城安置小区",
+        "lat": "22.719295012218",
+        "key": "龙飞大道669号"
+      },
+      {
+        "id": 128339,
+        "g": 3,
+        "lon": "114.22009",
+        "houseNum": 0,
+        "name": "深圳信息职业技术学院",
+        "lat": "22.689913",
+        "key": "龙翔大道2188号"
+      },
+      {
+        "id": 62596,
+        "g": 3,
+        "lon": "113.884245",
+        "houseNum": 8,
+        "name": "",
+        "lat": "22.561316",
+        "key": "第5大道高发西岸花园"
+      }
+    ]
+  }
 }

@@ -1,26 +1,26 @@
 {
-    "presets": [
-        // https://github.com/babel/babel-preset-env
-        // https://segmentfault.com/a/1190000005112677
-        // http://www.2ality.com/2015/12/babel6-loose-mode.html
-        ["env", {
-            "targets": {
-                "browsers": ['last 2 versions', 'iOS >= 7', 'Android >= 4'],
-                "node": "current"
-            },
-            "modules": false, // use webpack2 tree-shaking
-            "loose": true
-        }],
-        "stage-0"
-    ],
-    "plugins": [
-        // http://babeljs.io/docs/plugins/transform-runtime/
-        "transform-runtime",
-        // https://www.npmjs.com/package/babel-plugin-component
-        ["component", [
-            { "libraryName": "mint-ui", "style": true }
-        ]]
-    ],
-    // Output comments in generated output.
-    "comments": false
+  "presets": [
+    // https://github.com/babel/babel-preset-env
+    // https://segmentfault.com/a/1190000005112677
+    // http://www.2ality.com/2015/12/babel6-loose-mode.html
+    ["env", {
+      "targets": {
+        "browsers": ['last 2 versions', 'iOS >= 7', 'Android >= 4'],
+        "node": "current"
+      },
+      "modules": false, // use webpack2 tree-shaking
+      "loose": true
+    }],
+    "stage-0"
+  ],
+  "plugins": [
+    // http://babeljs.io/docs/plugins/transform-runtime/
+    "transform-runtime",
+    // https://www.npmjs.com/package/babel-plugin-component
+    ["component", [
+      { "libraryName": "mint-ui", "style": true }
+    ]]
+  ],
+  // Output comments in generated output.
+  "comments": false
 }

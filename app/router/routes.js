@@ -6,6 +6,6 @@ import house from '../house/router'
 
 // 合并所有router
 export default [
-    ...static_,
-    ...house,
+  ...static_,
+  ...house,
 ]

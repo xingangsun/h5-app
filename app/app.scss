@@ -2,162 +2,162 @@
  * app全局样式
  */
 .app {
-    height: 100%;
-    
-    .iconfont {
-        font-size: inherit;
-    }
+  height: 100%;
+
+  .iconfont {
+    font-size: inherit;
+  }
 }
 
 // mint-swipe
 .swipe-wrapper{
-    position: relative;
+  position: relative;
 
-    .mint-swipe {
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
+  .mint-swipe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .mint-swipe-item {
+    text-align: center;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+
+    &[lazy=loading], &[lazy=error] {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  .mint-swipe-indicators {
+    bottom: 0;
+
+    .mint-swipe-indicator {
+      background-color: #D8D8D8;
+      opacity: 1;
     }
 
-    .mint-swipe-item {
-        text-align: center;
+    .is-active {
+      background-color: #E84A01;
     }
-
-    img {
-        max-width: 100%;
-        max-height: 100%;
-
-        &[lazy=loading], &[lazy=error] {
-            position: relative;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-    }
-
-    .mint-swipe-indicators {
-        bottom: 0;
-
-        .mint-swipe-indicator {
-            background-color: #D8D8D8;
-            opacity: 1;
-        }
-
-        .is-active {
-            background-color: #E84A01;
-        }
-    }
+  }
 }
 
 /** infinite-scroll-loading-indicator */
 .infinite-loading {
-    height: 48px;
-    line-height: 48px;
-    text-align: center;
-    color: #BDBDBD;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  color: #BDBDBD;
 
-    .mint-spinner-fading-circle {
-        display: inline-block;
-        vertical-align: middle;
-        margin-right: 5px;
-    }
+  .mint-spinner-fading-circle {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
 }
 
 /** mint-MessageBox */
 .mint-msgbox-wrapper {
-    .mint-msgbox {
-        max-width: 288px;
-        border-radius: 12px;
-    }
+  .mint-msgbox {
+    max-width: 288px;
+    border-radius: 12px;
+  }
 
-    .mint-msgbox-content {
-        padding: 16px;
-    }
+  .mint-msgbox-content {
+    padding: 16px;
+  }
 
-    .mint-msgbox-message {
-        line-height: 1.5;
-        color: #212121;
-    }
+  .mint-msgbox-message {
+    line-height: 1.5;
+    color: #212121;
+  }
 
-    .mint-msgbox-btns {
-        height: 50px;
-    }
+  .mint-msgbox-btns {
+    height: 50px;
+  }
 
-    .mint-msgbox-btn {
-        color: #007AFF;
-    }
+  .mint-msgbox-btn {
+    color: #007AFF;
+  }
 
-    .mint-msgbox-confirm {
-        font-weight: bold;
-    }
+  .mint-msgbox-confirm {
+    font-weight: bold;
+  }
 }
 
 // 问题太多
 .scrollable { // for ios
-    // overflow: auto;
-    // -webkit-overflow-scrolling: touch;
+  // overflow: auto;
+  // -webkit-overflow-scrolling: touch;
 }
 
 /* 清除浮动 */
 .clearfix {
-    &:after {
-        display: block;
-        clear: both;
-        visibility: hidden;
-        height: 0;
-        content: ' ';
-    }
+  &:after {
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+    content: ' ';
+  }
 }
 
 .center-block {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .pull-left {
-    float: left;
+  float: left;
 }
 
 .pull-right {
-    float: right;
+  float: right;
 }
 
 .align-left {
-    text-align: left;
+  text-align: left;
 }
 
 .align-center {
-    text-align: center;
+  text-align: center;
 }
 
 .align-right {
-    text-align: right;
+  text-align: right;
 }
 
 .text-ellipsis {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .show {
-    display: block;
+  display: block;
 }
 
 .hide {
-    display: none;
+  display: none;
 }
 
 .visible {
-    visibility: visible;
+  visibility: visible;
 }
 
 .invisible {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 /*div[style^=background] { // for webpack error overlay
-    white-space: pre-wrap !important;
+  white-space: pre-wrap !important;
 }*/

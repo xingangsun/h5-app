@@ -3,11 +3,11 @@ import sampleConfig from './sample'
 
 let mineConfig
 try {
-    fs.accessSync(`${__dirname}/mine.js`)
-    mineConfig = require('./mine')
-    // console.log(mineConfig)
+  fs.accessSync(`${__dirname}/mine.js`)
+  mineConfig = require('./mine')
+  // console.log(mineConfig)
 } catch (err) {
-    mineConfig = {}
+  mineConfig = {}
 }
 
 export default Object.assign({}, sampleConfig, mineConfig)
